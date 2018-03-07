@@ -1,0 +1,111 @@
+<div class="GOTdata">
+    <div class="wrapper">
+        <nav class="navbar fixed-top">
+            <div class="container">
+                <div class="logo">
+                    <a href="/"><img class = "brand img-responsive" src="images/GOTlogo.png" alt=""></a>
+                </div>
+                <ul class="list-inline navbar-items">
+                    <li class="list-inline-item">
+                        <a class="navbar-links btn btn-lg" href="/" ng-click="mainCtrl.category='World';mainCtrl.categoryFilter();">
+                            <svg class="svg-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.4 15.2" style="enable-background:new 0 0 15.4 15.2;" xml:space="preserve">
+                                <g>
+                                    <rect class="icon-path" x="0" y="0" width="7.2" height="7.2"></rect>
+                                    <rect class="icon-path" x="8.2" y="0" width="7.2" height="7.2"></rect>
+                                    <rect class="icon-path" x="0" y="8" width="7.2" height="7.2"></rect>
+                                    <rect class="icon-path" x="8.2" y="8" width="7.2" height="7.2"></rect>
+                                </g>
+                            </svg>
+                            <span>Home</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="navbar-links btn btn-lg" href='' ng-click="mainCtrl.category='People';mainCtrl.isCharacter=true;mainCtrl.isBook=false;mainCtrl.isHouse=false;mainCtrl.categoryFilter();">
+                            <svg class="svg-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 14.7" style="enable-background:new 0 0 17 14.7;" xml:space="preserve">
+                                <g>
+                                    <path class="icon-path" d="M0,7.4c0,0.5,0,1.1,0.3,1.4C0.4,8.9,0.5,9,0.6,9v2.9h2.8V9c0.2-0.1,0.4-0.2,0.5-0.6C4,8.1,4,7.7,4,7.4V5.1H0
+                    V7.4z"></path>
+                                    <path class="icon-path" d="M13,5.1v2.3c0,0.7,0.2,1.2,0.6,1.3v3.2h2.8V8.7C16.8,8.5,17,7.9,17,7.4V5.1H13z"></path>
+                                    <path class="icon-path" d="M5.7,9.1c0,0.9,0.4,1.5,1.1,1.7v4h3.4v-4c0.7-0.1,1.1-0.7,1.1-1.7v-4H5.7V9.1z"></path>
+                                    <circle class="icon-path" cx="15" cy="3.1" r="1.4"></circle>
+                                    <circle class="icon-path" cx="2" cy="3.1" r="1.4"></circle>
+                                    <circle class="icon-path" cx="8.5" cy="2.3" r="2.3"></circle>
+                                </g>
+                            </svg>
+                            <span>People</span></a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="navbar-links btn btn-lg" href ng-click="mainCtrl.category='House';mainCtrl.isCharacter=false;mainCtrl.isBook=false;mainCtrl.isHouse=true;mainCtrl.categoryFilter();">
+                            <svg class="svg-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11.3 15.4" style="enable-background:new 0 0 11.3 15.4;" xml:space="preserve">
+                                <g>
+                                    <path class="icon-path" d="M0,2.7V5v1.1v3.2v0.4c0,0,0.3,3.2,5.6,5.8l0.2-0.2l-0.1,0.2c5.3-2.5,5.6-5.8,5.6-5.8V9.3V6.1V5V2.7H0z M10,6.6
+                    V9v0.3c0,0-0.2,2.5-4.3,4.4l0.1-0.2l-0.2,0.2c-4-1.9-4.3-4.4-4.3-4.4V9V6.6V5.8H10V6.6z"></path>
+                                    <g>
+                                        <rect x="0" y="0" class="icon-path" width="1.4" height="1.4"></rect>
+                                        <rect x="2.5" y="0" class="icon-path" width="1.4" height="1.4"></rect>
+                                        <rect x="5" y="0" class="icon-path" width="1.3" height="1.3"></rect>
+                                        <rect x="7.5" y="0" class="icon-path" width="1.3" height="1.3"></rect>
+                                        <rect x="10" y="0" class="icon-path" width="1.3" height="1.3"></rect>
+                                    </g>
+                                </g>
+                            </svg>
+                            <span>Houses</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="navbar-links btn btn-lg" href ng-click="mainCtrl.category='Books';mainCtrl.isCharacter=false;mainCtrl.isBook=true;mainCtrl.isHouse=false;mainCtrl.categoryFilter();">
+                            <svg class="svg-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 12.2 15.2" style="enable-background:new 0 0 12.2 15.2;" xml:space="preserve">
+                                <g>
+                                    <path class="icon-path" d="M0,0.8v13.7c0,0.4,0.3,0.8,0.8,0.8H2V0H0.8C0.3,0,0,0.3,0,0.8z"></path>
+                                    <path class="icon-path" d="M11.9,0H2.5v15.2h9.4c0.1,0,0.3-0.1,0.3-0.3V0.3C12.2,0.1,12,0,11.9,0z M9.6,5.3c0,0.1-0.1,0.3-0.3,0.3H5.3
+                    c-0.1,0-0.3-0.1-0.3-0.3v-2C5.1,3.2,5.2,3,5.3,3h4.1c0.1,0,0.3,0.1,0.3,0.3V5.3z"></path>
+                                </g>
+                            </svg> <span>Books</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="filter text-center">
+        <button type="button" class=" btn btn-dark" data-toggle="collapse" data-target="#filters">Filters</button>
+    </div>
+    <div id="filters" class="collapse">
+        <div class="dropdownMenu text-center">
+            <div class="drodD" id="Sort">
+                <label>Sort</label>
+                <select class="dropdown" ng-model="mainCtrl.sortProp">
+                    <option value="+name">A-Z</option>
+                    <option value="-name">Z-A</option>
+                </select>
+            </div>
+            <div class="drodD" id="ISBN" ng-show="mainCtrl.isBook">
+                <label>ISBN</label>
+                <select class="dropdown " ng-model='selectedISBN'>
+                    <option value="" disabled selected>ISBN</option>
+                    <option value="">All</option>
+                    <option ng-repeat="x in mainCtrl.isbn" value="{{x}}">{{x}}</option>
+                </select>
+            </div>
+        </div>
+        <div class="searchFilter">
+            <div class="box">
+                <div class="container-1">
+                    <input ng-show="mainCtrl.isBook" placeholder="Search By Author Name.." ng-model="mainCtrl.query1" />
+                    <input ng-show="mainCtrl.isBook" placeholder="Search By Book Name" ng-model="mainCtrl.query2" />
+                    <input ng-show="mainCtrl.isHouse" placeholder="Search By House Name" ng-model="mainCtrl.query2" />
+                    <input ng-show="mainCtrl.isCharacter" placeholder="Search By Character Name" ng-model="mainCtrl.query2" />
+                    <input ng-show="mainCtrl.isHouse" placeholder="Search By Region" ng-model="mainCtrl.query3" />
+                    <input ng-show="mainCtrl.isCharacter" placeholder="Search By Characters Alias" ng-model="mainCtrl.query4" />
+                    <input ng-show="mainCtrl.isBook" placeholder="Search By Released Date" ng-model="mainCtrl.query5" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="text-center">Game of Thrones {{mainCtrl.category}}</h2>
+    <div class="GOTworld text-center ">
+        <div class="gotData text-center" ng-repeat="x in mainCtrl.GOTdata| filter:mainCtrl.categoryFilter(mainCtrl.category)  | filter:mainCtrl.query1| filter:mainCtrl.query2| filter:mainCtrl.query3| filter:mainCtrl.query4| filter:mainCtrl.query5| filter: (!!selectedISBN || undefined) && selectedISBN  |orderBy:mainCtrl.sortProp ">
+            <book-card ng-if="x.isbn"></book-card>
+            <house-card ng-if="x.region"></house-card>
+            <character-card ng-if="x.gender"></character-card>
+        </div>
+    </div>
+</div>

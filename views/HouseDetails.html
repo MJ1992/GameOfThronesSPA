@@ -1,0 +1,111 @@
+<div class="wrapper">
+    <nav class="navbar fixed-top">
+        <div class="container text-center">
+            <div class="logo ">
+                <a href="/"><img class = "brand img-responsive" src="images/GOTlogo.png" alt=""></a>
+            </div>
+        </div>
+    </nav>
+</div>
+<div class="text-center home ">
+<a class="navbar-links btn btn-lg" href="/" >
+                                <svg class="svg-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 15.4 15.2" style="enable-background:new 0 0 15.4 15.2;" xml:space="preserve">
+                                    <g>
+                                        <rect class="icon-path" x="0" y="0" width="7.2" height="7.2"></rect>
+                                        <rect class="icon-path" x="8.2" y="0" width="7.2" height="7.2"></rect>
+                                        <rect class="icon-path" x="0" y="8" width="7.2" height="7.2"></rect>
+                                        <rect class="icon-path" x="8.2" y="8" width="7.2" height="7.2"></rect>
+                                    </g>
+                                </svg>
+                                <span>Home</span></a>
+    
+</div>
+<div class="table-responsive">
+    <table class="table table-striped table-hover table-bordered">
+        <tbody>
+            <tr>
+                <td><b>Name</b></td>
+                <td>{{houseCtrl.house.name}}</td>
+            </tr>
+            <tr>
+                <td><b>Region</b></td>
+                <td>{{houseCtrl.house.region}}</td>
+            </tr>
+            <tr>
+                <td><b>Founder</b></td>
+                <td>{{houseCtrl.founder[0]}}</td>
+            </tr>
+            <tr>
+                <td><b>Founded</b></td>
+                <td>{{houseCtrl.house.founded}}</td>
+            </tr>
+            <tr>
+                <td><b>Overlord</b></td>
+                <td>{{houseCtrl.overlord[0]}}</td>
+            </tr>
+            <tr>
+                <td><b>Current lord</b></td>
+                <td>{{houseCtrl.currentLord[0]}}</td>
+            </tr>
+            <tr>
+                <td><b>Heir</b></td>
+                <td>{{houseCtrl.Heir[0]}}</td>
+            </tr>
+            <tr>
+                <td><b>Cadet Branches</b></td>
+                <td><span ng-repeat="branch in houseCtrl.cadetBranches">{{branch}}<span ng-show = "!$last">, </span></span>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Ancestral Weapons</b></td>
+                <td><span ng-repeat="weapon in houseCtrl.house.ancestralWeapons">{{weapon}}<span ng-show = "!$last">, </span></span>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Titles</b></td>
+                <td><span ng-repeat="title in houseCtrl.house.titles">{{title}}<span ng-show = "!$last">, </span></span>
+                </td>
+            </tr>
+            <tr>
+                <td><b>Died out</b></td>
+                <td>{{houseCtrl.house.diedOut}}</td>
+            </tr>
+            <tr>
+                <td><b>Coat of Arms</b></td>
+                <td>{{houseCtrl.house.coatOfArms}}</td>
+            </tr>
+            <tr>
+                <td><b>Words</b></td>
+                <td>{{houseCtrl.house.words}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<ul class="nav nav-tabs nav-justified">
+    <li class="active">
+        <a data-target="#swornMembers" data-toggle="tab" aria-expanded="true">Sworn Members </a>
+    </li>
+    <li class="">
+        <a data-target="#seats" data-toggle="tab" aria-expanded="false">Seats</a>
+    </li>
+</ul>
+<div class="tab-content">
+    <div id='swornMembers' class="swornMembers tab-pane fade in active">
+        <table class="table">
+            <tbody>
+                <tr ng-repeat="swornMember in houseCtrl.swornMembers track by    $index">
+                    <td>{{swornMember}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id='seats' class="seats tab-pane fade">
+        <table class="table">
+            <tbody>
+                <tr ng-repeat="seat in houseCtrl.house.seats">
+                    <td>{{seat}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,416 @@
+body {
+    font-family: 'Lato';
+    background-color: #FEFEFE;
+}
+
+.navbar {
+    background-color: #323232;
+}
+
+a {
+    text-decoration: none;
+    color: #42798E;
+}
+
+a:active {
+    background-color: yellow;
+}
+
+.home svg {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+}
+
+.navbar svg {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+span {
+    width: 50px;
+
+    font-size: 18px;
+    font-weight: 600;
+    font-color: #FFF;
+    margin: 5px 2px;
+}
+
+.logo {
+    width: 20%;
+
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.navbar-items {
+    width: 60%;
+    float: right;
+    text-align: center;
+}
+
+.navbar-items span {
+    color: grey;
+}
+
+a:hover span {
+    color: #42798E;
+}
+
+a:hover {
+    color: #42798E;
+    text-decoration: none;
+    background: #323232;
+}
+
+.GOTworld {
+    background-color: #FEFEFE;
+    color: #37003C;
+}
+
+.bookCard {
+    background-color: #FEFEFE;
+    color: #37003C;
+    margin: 10px 35px;
+    padding: 10px 10px;
+    height: 300px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.characterCard {
+    background-color: #FEFEFE;
+    color: #37003C;
+    margin: 10px 35px;
+    height: 300px;
+    font-size: 14px;
+    padding: 10px 10px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.houseCard {
+    background-color: #FEFEFE;
+    color: #37003C;
+    margin: 10px 35px;
+    padding: 10px 10px;
+    height: 300px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bookCard svg {
+    width: 100px;
+    height: 100px;
+}
+
+.characterCard svg {
+    width: 100px;
+    height: 100px;
+}
+
+.houseCard svg {
+    width: 100px;
+    height: 100px;
+}
+
+.bookCard h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+}
+
+.characterCard h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+}
+
+.houseCard h3 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+}
+
+.bookCard h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.characterCard h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.houseCard h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #000;
+}
+
+.bookCard h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.characterCard h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+.houseCard h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+}
+
+td {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+td span {
+    font-weight: 500;
+}
+
+.nav-tabs a {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.searchFilter {
+    margin: 20px auto;
+    background-color: #FEFEFE;
+    text-align: center;
+}
+
+.container-1 {
+    width: 100%;
+}
+
+.container-1 input {
+    width: 300px;
+    height: 50px;
+    background: #000;
+    border: none;
+    font-size: 12pt;
+
+
+    color: #323232;
+    padding-left: 45px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+
+.dropdown {
+    margin: 10px auto;
+    background-color: #323232;
+    color: #FEFEFE;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 135px;
+    height: 35px;
+    text-align: center;
+    text-indent: 25px;
+}
+
+#Sort,
+#ISBN {
+    display: inline-block;
+    width: 40%;
+    margin: 5px 10px;
+
+    float: left;
+}
+
+@media only screen and (max-width: 315px) {
+    .logo img {
+        width: 200px;
+        margin: 2px auto;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+        padding: 5px auto;
+    }
+    .navbar-items {
+        width: 100%;
+        float: left;
+    }
+    .navbar-box {
+        text-align: center;
+    }
+    .container-1 input {
+        width: 150px;
+        height: 50px;
+        margin: 5px auto;
+        border: 1px solid black;
+        font-size: 8pt;
+    }
+    #Sort,
+    #ISBN {
+        display: block;
+        width: 90%;
+        margin: 5px 10px;
+    }
+    .bookCard {
+        background-color: #FEFEFE;
+        color: #37003C;
+
+        padding: 10px 20px;
+        height: 300px;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .characterCard {
+        background-color: #FEFEFE;
+        color: #37003C;
+
+        height: 300px;
+        font-size: 14px;
+        padding: 10px 20px;
+        font-weight: 700;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .houseCard {
+        background-color: #FEFEFE;
+        color: #37003C;
+
+        padding: 10px 20px;
+        height: 300px;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    td {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    td span {
+        font-weight: 500;
+    }
+}
+
+@media only screen and (min-width: 316px) and (max-width: 469px) {
+
+    .logo img {
+        width: 200px;
+        margin: 2px auto;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+        padding: 5px auto;
+    }
+    .navbar-items {
+        width: 100%;
+        float: left;
+    }
+    .navbar-box {
+        text-align: center;
+    }
+    .container-1 input {
+        width: 200px;
+        height: 50px;
+        margin: 5px auto;
+        border: 1px solid black;
+        font-size: 8pt;
+    }
+
+    td {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    td span {
+        font-weight: 500;
+    }
+}
+
+@media only screen and (min-width: 470px) and (max-width: 992px) {
+    .logo img {
+        width: 200px;
+        margin: 2px auto;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+        padding: 5px auto;
+    }
+    .navbar-items {
+        width: 100%;
+        float: left;
+    }
+    .navbar-box {
+        text-align: center;
+    }
+
+
+
+
+    .container-1 input {
+        width: 250px;
+        height: 50px;
+        margin: 5px auto;
+        border: 1px solid black;
+        font-size: 10pt;
+    }
+
+    .bookCard {
+        background-color: #FEFEFE;
+        color: #37003C;
+        width: 45%;
+        display: inline-block;
+        float: left;
+        padding: 10px 5px;
+        margin: 10px 5px;
+        height: 300px;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .characterCard {
+        background-color: #FEFEFE;
+        color: #37003C;
+        width: 45%;
+        display: inline-block;
+        float: left;
+        height: 300px;
+        font-size: 14px;
+        padding: 10px 5px;
+        margin: 10px 5px;
+        font-weight: 700;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .houseCard {
+        background-color: #FEFEFE;
+        color: #37003C;
+        width: 45%;
+        display: inline-block;
+        float: left;
+        padding: 10px 5px;
+        margin: 10px 5px;
+        height: 300px;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    td {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    td span {
+        font-weight: 500;
+    }
+}

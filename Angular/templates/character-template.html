@@ -1,0 +1,18 @@
+<div class=" col-md-3 col-sm-6 text-center characterCard">
+    <a ng-href="/#!/CharacterDetails/{{x.url.split('/').pop()}}">
+        <svg class="svg-icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 14.7" style="enable-background:new 0 0 17 14.7;" xml:space="preserve">
+            <g>
+                <path class="icon-path" d="M0,7.4c0,0.5,0,1.1,0.3,1.4C0.4,8.9,0.5,9,0.6,9v2.9h2.8V9c0.2-0.1,0.4-0.2,0.5-0.6C4,8.1,4,7.7,4,7.4V5.1H0
+                    V7.4z"></path>
+                <path class="icon-path" d="M13,5.1v2.3c0,0.7,0.2,1.2,0.6,1.3v3.2h2.8V8.7C16.8,8.5,17,7.9,17,7.4V5.1H13z"></path>
+                <path class="icon-path" d="M5.7,9.1c0,0.9,0.4,1.5,1.1,1.7v4h3.4v-4c0.7-0.1,1.1-0.7,1.1-1.7v-4H5.7V9.1z"></path>
+                <circle class="icon-path" cx="15" cy="3.1" r="1.4"></circle>
+                <circle class="icon-path" cx="2" cy="3.1" r="1.4"></circle>
+                <circle class="icon-path" cx="8.5" cy="2.3" r="2.3"></circle>
+            </g>
+        </svg>
+        <h3> {{ x.name || "Name Not Available" }}</h3>
+        <h4> {{ x.gender|| "Not Available" }}</h4>
+        <h5>{{ x.aliases[0] || "Not Available"}}</h5>
+    </a>
+</div>
